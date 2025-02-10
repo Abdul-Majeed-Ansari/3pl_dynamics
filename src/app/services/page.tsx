@@ -6,8 +6,8 @@ const page = () => {
   return (
     <div>
       <Breadcrumb
-        pageName="Services Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="What We Offer"
+        description="Empowering businesses with cutting-edge digital solutions. At SourceIgnite, we bring your ideas to life with innovation, expertise, and a passion for excellence."
       />
       <Features />
     </div>
