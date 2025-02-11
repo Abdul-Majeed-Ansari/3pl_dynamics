@@ -54,7 +54,6 @@ const Contact = () => {
       setFeedback({ type: "error", message: "An error occurred. Please try again later." });
     }
   };
-
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -73,8 +72,8 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              {/* Form */}
-              <form onSubmit={handleSubmit}>
+{/* Form */}
+<form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -150,7 +149,7 @@ const Contact = () => {
                   </p>
                 )}
               </form>
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -158,4 +157,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;

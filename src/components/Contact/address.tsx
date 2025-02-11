@@ -58,7 +58,7 @@ const Address = () => {
             Email Us
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-            hello@sourceignite.com
+          dev.sourceignite@gmail.com
           </p>
         </div>
       </div>

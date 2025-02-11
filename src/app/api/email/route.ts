@@ -12,9 +12,9 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(request: NextRequest) {
-  try {
+  // try {
     const body = await request.json();
-    const { name, email, phone, message } = body;
+    const { name, email, message } = body;
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -25,13 +25,11 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.GMAIL_FROM,
-      to: 'hello@sourceignitegmail.com', // Explicitly set to infozyck@gmail.com
+      to: 'dev.sourceignite@gmail.com', // Explicitly set to infozyck@gmail.com
       subject: `New Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
         Email: ${email}
-        Phone: ${phone || 'Not provided'}
-        
         Message:
         ${message}
       `,
@@ -39,7 +37,6 @@ export async function POST(request: NextRequest) {
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
         <h3>Message:</h3>
         <p>${message}</p>
       `
@@ -51,11 +48,11 @@ export async function POST(request: NextRequest) {
       { message: 'Email sent successfully' }, 
       { status: 200 }
     );
-  } catch (error) {
-    console.error('Email sending error:', error);
-    return NextResponse.json(
-      { error: 'Failed to send email' }, 
-      { status: 500 }
-    );
-  }
+  // } catch (error) {
+  //   console.error('Email sending error:', error);
+  //   return NextResponse.json(
+  //     { error: 'Failed to send email' }, 
+  //     { status: 500 }
+  //   );
+  // }
 }
