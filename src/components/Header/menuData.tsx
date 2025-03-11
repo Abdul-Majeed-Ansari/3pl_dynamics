@@ -1,14 +1,5 @@
 import { Menu } from "@/types/menu";
 
-// type Menu = {
-//   dropdown?: any;
-//   id: number;
-//   title: string;
-//   path?: string;
-//   newTab: boolean;
-//   submenu?: Menu[];
-// };
-
 const menuData: Menu[] = [
   {
     id: 1,

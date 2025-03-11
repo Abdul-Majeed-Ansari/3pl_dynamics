@@ -25,7 +25,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-[40%]">
               <SectionTitle
                 title="Our Mission"
-                paragraph="Our mission is to help businesses harness the power of technology to solve problems, drive growth, and create lasting value. By combining creativity, technical expertise, and a deep understanding of industry trends, we deliver solutions that exceed expectations and make a real impact."
+                paragraph="At 3PL Dynamics, our mission is to revolutionize third-party logistics by leveraging cutting-edge technology to streamline operations, enhance efficiency, and drive business growth. We are committed to delivering scalable, high-performance solutions that empower businesses to optimize supply chain management with precision and reliability."
                 mb="44px"
               />
 
@@ -52,7 +52,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-[60%]">
               <div className="relative mx-auto aspect-[25/16] max-w-[620px] lg:mr-0">
                 <Image
-                  src="/images/about/mission.jpg"
+                  src="/images/ourmission.jpg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"

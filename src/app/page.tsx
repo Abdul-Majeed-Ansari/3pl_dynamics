@@ -12,7 +12,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SourceIgnite",
+  title: "3pl Dynamics",
   description: "This is Home for Startup Nextjs Template",
   // other metadata
 };

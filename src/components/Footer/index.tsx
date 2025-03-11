@@ -31,7 +31,7 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="/"
+                    href="https://www.facebook.com/profile.php?id=61573912836525"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -50,7 +50,7 @@ const Footer = () => {
                       />
                     </svg>
                   </a>
-                  <a
+                  {/* <a
                     href="/"
                     aria-label="social-link"
                     target="_blank"
@@ -71,7 +71,7 @@ const Footer = () => {
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                   {/* <a
                     href="/"
                     aria-label="social-link"
@@ -89,7 +89,7 @@ const Footer = () => {
                     </svg>
                   </a> */}
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/3pl-dynamics"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -119,7 +119,7 @@ const Footer = () => {
                       href="/services"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Services
+                      Products
                     </Link>
                   </li>
                   <li>
@@ -135,7 +135,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      Company
                     </Link>
                   </li>
                 </ul>

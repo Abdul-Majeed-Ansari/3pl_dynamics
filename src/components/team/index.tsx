@@ -6,53 +6,30 @@ import React from 'react'
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Awais',
-      role: 'Founder & CEO',
-      image: '/images/team/ceo.jpg',
+      name: 'Talha Khan',
+      role: 'Founder & Tech Leader',
+      image: '/images/team/talha.png',
       social: {
-        linkedin: 'https://www.linkedin.com/in/muhammad-awais-naeem-1117b1167/',
+        linkedin: 'https://www.linkedin.com/in/talha-khan-%F0%9F%87%B5%F0%9F%87%B0%F0%9F%87%B5%F0%9F%87%B8-46177b13b/',
       }
     },
     {
-      name: 'Hassan Tahir',
-      role: 'Co-Founder & CTO',
-      image: '/images/team/hassan.jpg',
+      name: 'Umer Aslam',
+      role: 'Co-Founder & Senior Software Engineer',
+      image: '/images/team/unknown.jpeg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/hasantahir97/',
+        linkedin: 'https://www.linkedin.com/in/umer-aslam-9399a4175/',
       }
     },
     {
-      name: 'Hamza Hashmi',
-      role: 'Development Lead',
-      image: '/images/team/hamza.jpg',
+      name: 'Ali Imam',
+      role: 'Co-Founder & Senior Mobile App Developer',
+      image: '/images/team/ali-imam.jpg',
       social: {
-        linkedin: 'https://www.linkedin.com/in/hamzahashmi556/'
+        linkedin: 'https://www.linkedin.com/in/ali-imam-%EF%A3%BF-168040189/'
       }
     },
-    {
-      name: 'Armani Saintil',
-      role: 'Business Development Manager',
-      image: '/images/team/armani.jpg',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/armani-saintil-95415a325/'
-      }
-    },
-    {
-      name: 'Umar Asim',
-      role: 'Project Manager',
-      image: '/images/team/umarkhan.jpg',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/umar-a-31a5b3180/'
-      }
-    },
-    {
-      name: 'Rehana Syed',
-      role: 'Creative Head & UI/UX Designer',
-      image: '/images/team/rehana.jpeg',
-      social: {
-        linkedin: 'https://www.linkedin.com/in/rehana-syed-106b74197/'
-      }
-    }
+    
   ];
 
   return (
@@ -67,13 +44,13 @@ const Team = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <div 
                 key={index} 
                 className={`group ${
                   index >= teamMembers.length - 2 
-                    ? 'lg:col-span-2 lg:mx-auto lg:max-w-sm' 
+                    ? 'lg:col-span-1 lg:mx-auto lg:max-w-sm' 
                     : ''
                 }`}
               >
@@ -88,7 +65,7 @@ const Team = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="flex justify-center space-x-4">
-                        <Link href={member.social.linkedin} className="text-white hover:text-gray-200 transition-colors">
+                        <Link href={member.social.linkedin} target='_blank' rel='noopener noreferrer'  className="text-white hover:text-gray-200 transition-colors">
                           <Linkedin size={20} />
                         </Link>
                       </div>

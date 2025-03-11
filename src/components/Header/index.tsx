@@ -118,8 +118,8 @@ const Header = () => {
 
             {/* Right Section */}
             <div className="flex items-center justify-end pr-16 lg:pr-0">
-              <Link href="/signin" className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block">
-                Sign In
+              <Link href="/" className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block">
+                Get Started
               </Link>
               <div>
                 <ThemeToggler />
