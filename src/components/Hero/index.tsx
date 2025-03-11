@@ -12,10 +12,10 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Innovative Software Solutions for Forward-Thinking Businesses
+                3PL Dynamics Streamlining Logistics Efficiently
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                At SourceIgnite, we specialize in creating software solutions that help your business succeed in the digital world. Whether you need web or mobile app development, IT consultation, SEO, or UI/UX design, our team has the expertise to bring your ideas to life. We work with businesses of all sizes to build a strong digital presence that drives growth and innovation. Our solutions are designed to be scalable and high-performing, helping you stay ahead in today’s fast-paced digital landscape.
+                3PL Dynamics offers a comprehensive third-party logistics (3PL) solution that enhances efficiency and visibility in supply chain operations. Our system is designed to streamline warehousing, order fulfillment, and distribution processes. With real-time tracking and management, we optimize stock levels to ensure accurate order processing, reduced wastage, and improved operational efficiency.
                 </p>
                 {/* <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                 Whether youre looking for web or mobile app development, IT consultation, SEO optimization, or UI/UX design, we have the expertise to bring your vision to life. We help businesses—whether you're a startup or an established enterprise—build a strong digital presence that supports growth and innovation.

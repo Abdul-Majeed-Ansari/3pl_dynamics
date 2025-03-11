@@ -32,7 +32,7 @@ const Address = () => {
             Address
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-          34 Summit Close, Kingswood, Bristol, Gloucestershire, BS15 9AB
+          A-1 Cottages, Federal B Area Block 9 Yaseenabad, Karachi, 75950
           </p>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Address = () => {
             Email Us
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-          dev.sourceignite@gmail.com
+          talha.k2625@gmail.com 
           </p>
         </div>
       </div>

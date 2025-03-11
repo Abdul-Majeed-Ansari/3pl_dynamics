@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Matthew",
     designation: "Founder @TailGrids",
     content:
-      "Our members are impressed by the intuitive design. It’s sleek, easy to use, and keeps distractions at bay. Perfect for community-focused projects!",
+      "Our team is highly impressed by the intuitive design of 3PL Dynamics. It’s sleek, easy to navigate, and eliminates unnecessary complexity, making it perfect for optimizing logistics operations.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "William",
     designation: "Founder @UIdeck",
     content:
-      "Our users love how clean and simple the interface is. It’s intuitive and distraction-free, making it ideal for building a thriving community.",
+      "We love how clean and simple the interface is. 3PL Dynamics ensures a seamless workflow, keeping distractions at bay and allowing our team to focus on what matters efficient supply chain management.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "James",
     designation: "Founder @Lineicons",
     content:
-      "Our members are thrilled with the intuitive navigation, distraction-free design, which creates environment for a productive community.",
+      "The intuitive navigation and distraction-free design of 3PL Dynamics create the perfect environment for a productive logistics team. It has improved our efficiency and collaboration!",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },

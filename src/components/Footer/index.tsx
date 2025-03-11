@@ -12,22 +12,22 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-10">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo si.png"
+                    src="/images/logo/3PLDynamics(Dark).png"
                     alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
+                    className="w-[40%] dark:hidden"
+                    width={100}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/3pl-logo.png"
                     alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
+                    className="hidden w-[40%] dark:block"
+                    width={100}
                     height={30}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                SourceIgnite is an innovative IT startup specializing in cutting-edge software solutions, cloud services, and digital transformation. We ignite businesses with technology-driven growth, efficiency, and scalability.
+                3PL Dynamics provides efficient third-party logistics solutions, enhancing visibility and streamlining warehousing, order fulfillment, and distribution. Our real-time tracking optimizes stock levels for accurate processing, reduced waste, and improved efficiency.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -174,7 +174,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-            Copyright @ 2025 SourceIgnite.
+            Copyright @ 2025 3pl Dynamics.
             </p>
           </div>
         </div>

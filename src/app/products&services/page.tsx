@@ -7,7 +7,7 @@ const page = () => {
     <div>
       <Breadcrumb
         pageName="What We Offer"
-        description="Empowering businesses with cutting-edge digital solutions. At SourceIgnite, we bring your ideas to life with innovation, expertise, and a passion for excellence."
+        description="Empowering businesses with cutting-edge digital solutions. At 3pl Dynamics, we bring your ideas to life with innovation, expertise, and a passion for excellence."
       />
       <Features />
     </div>
