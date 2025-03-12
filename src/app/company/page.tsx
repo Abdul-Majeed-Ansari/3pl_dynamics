@@ -6,17 +6,17 @@ import Team from "@/components/team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | Free Next.js Template for Startup and SaaS",
-  description: "This is About Page for Startup Nextjs Template",
+  title: "Company Page | Free Next.js Template for Startup and SaaS",
+  description: "This is Company Page for Startup Nextjs Template",
   // other metadata
 };
 
-const AboutPage = () => {
+const Company = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Us"
-        description="At SourceIgnite, we transform ideas into digital solutions that drive success, offering innovative and reliable services to help businesses thrive in the digital world."
+        pageName="Company"
+        description="3PL (Third-Party Logistics) provides seamless supply chain solutions, including warehousing, inventory management, and transportation, ensuring efficiency, scalability, and cost savings for businesses."
       />
       <AboutSectionTwo />
       <AboutSectionOne />
@@ -25,4 +25,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default Company;
