@@ -2,6 +2,7 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Team from "@/components/team";
+import DonationCard from "@/components/DonationCard";
 
 import { Metadata } from "next";
 
@@ -21,6 +22,7 @@ const Company = () => {
       <AboutSectionTwo />
       <AboutSectionOne />
       <Team />
+      <DonationCard />
     </>
   );
 };

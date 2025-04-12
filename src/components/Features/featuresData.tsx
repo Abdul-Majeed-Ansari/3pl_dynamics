@@ -278,12 +278,12 @@ const featuresData: Feature[] = [
     id: 7,
     icon: (
       <svg width="40" height="45" viewBox="0 0 40 45" xmlns="http://www.w3.org/2000/svg" className="fill-current text-blue-500">
-  <path d="M5 10H35V35H5V10Z" stroke="blue" stroke-width="2" fill="none"/>
-  <path d="M10 15H30V30H10V15Z" stroke="blue" stroke-width="2" fill="none"/>
+  <path d="M5 10H35V35H5V10Z" stroke="blue" strokeWidth="2" fill="none"/>
+  <path d="M10 15H30V30H10V15Z" stroke="blue" strokeWidth="2" fill="none"/>
   <circle cx="10" cy="35" r="3" fill="blue"/>
   <circle cx="30" cy="35" r="3" fill="blue"/>
-  <path d="M15 35H25" stroke="blue" stroke-width="2"/>
-  <path d="M20 10V5" stroke="blue" stroke-width="2"/>
+  <path d="M15 35H25" stroke="blue" strokeWidth="2"/>
+  <path d="M20 10V5" stroke="blue" strokeWidth="2"/>
 </svg>
 
     ),
