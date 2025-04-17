@@ -23,7 +23,7 @@ const Team = () => {
     },
     {
       name: 'Ali Imam',
-      role: 'Co-Founder & Senior Mobile App Developer',
+      role: 'Co-Founder & Senior Mobile App Developer',
       image: '/images/team/ali-imam.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/ali-imam-%EF%A3%BF-168040189/'
@@ -35,11 +35,11 @@ const Team = () => {
   return (
     <>
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Meet Our Team</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Our diverse team of experts is passionate about creating innovative solutions that drive your success.
             </p>
           </div>
@@ -54,7 +54,7 @@ const Team = () => {
                     : ''
                 }`}
               >
-                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2 bg-white dark:bg-gray-800">
                   <Image 
                     width={500}
                     height={400}
@@ -65,7 +65,7 @@ const Team = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="flex justify-center space-x-4">
-                        <Link href={member.social.linkedin} target='_blank' rel='noopener noreferrer'  className="text-white hover:text-gray-200 transition-colors">
+                        <Link href={member.social.linkedin} target='_blank' rel='noopener noreferrer' className="text-white hover:text-gray-200 transition-colors">
                           <Linkedin size={20} />
                         </Link>
                       </div>
@@ -73,14 +73,14 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="mt-4 text-center">
-                  <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
-                  <p className="text-gray-600 mt-1">{member.role}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{member.name}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-1">{member.role}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section> 
+      </section>
     </>
   )
 }

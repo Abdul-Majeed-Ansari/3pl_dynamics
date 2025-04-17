@@ -32,7 +32,8 @@ const Address = () => {
             Address
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-          A-1 Cottages, Federal B Area Block 9 Yaseenabad, Karachi, 75950
+            R-552 Gulberg Town, Block 16 Federal B Area, Near Karachi Institute
+            of Heart Diseases, Karachi
           </p>
         </div>
       </div>
@@ -58,7 +59,7 @@ const Address = () => {
             Email Us
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-          talha.k2625@gmail.com 
+            talha.k2625@gmail.com
           </p>
         </div>
       </div>
