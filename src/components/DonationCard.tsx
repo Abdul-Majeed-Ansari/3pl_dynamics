@@ -18,7 +18,8 @@ function App() {
             </p>
           </div>
           <a
-            href="#"
+            href="https://www.pcrf.net/"
+            target='_blank'
             className="bg-blue-500 hover:bg-blue-600 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-14 py-5 rounded-xl text-lg whitespace-nowrap font-semibold transition-colors duration-200 shadow-sm hover:shadow-md"
           >
             Donate Now
