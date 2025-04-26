@@ -12,10 +12,10 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                DigifySoft Building Smart Software for a Digital World.
+                3PL Dynamics Streamlining Logistics Efficiently
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                At DigifySoft, we combine innovation, strategy and technology to help startups and enterprises thrive in a digital-first world. We don’t just build software we create meaningful digital experiences that solve real problems, spark growth, and drive results. From sleek mobile apps to powerful web platforms and intelligent AI solutions, our passionate team is here to turn your vision into reality.
+                3PL Dynamics offers a comprehensive third-party logistics (3PL) solution that enhances efficiency and visibility in supply chain operations. Our system is designed to streamline warehousing, order fulfillment, and distribution processes. With real-time tracking and management, we optimize stock levels to ensure accurate order processing, reduced wastage, and improved operational efficiency.
                 </p>
                 {/* <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                 Whether youre looking for web or mobile app development, IT consultation, SEO optimization, or UI/UX design, we have the expertise to bring your vision to life. We help businesses—whether you're a startup or an established enterprise—build a strong digital presence that supports growth and innovation.

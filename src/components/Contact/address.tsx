@@ -59,7 +59,7 @@ const Address = () => {
             Email Us
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-            info@digifysoft.com
+            talha.k2625@gmail.com
           </p>
         </div>
       </div>

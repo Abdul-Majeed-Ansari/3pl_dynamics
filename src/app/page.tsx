@@ -10,9 +10,10 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import DonationCard from "@/components/DonationCard";
 
 export const metadata: Metadata = {
-  title: "DigifySoft",
+  title: "3pl Dynamics",
   description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
@@ -31,6 +32,7 @@ export default function Home() {
       {/* <Pricing /> */}
       {/* <Blog /> */}
       <Contact />
+      <DonationCard />
     </>
   );
 }

@@ -25,7 +25,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-[40%]">
               <SectionTitle
                 title="Our Mission"
-                paragraph="At DigifySoft, our mission is to empower businesses by harnessing the power of innovation, strategy, and technology. We are dedicated to creating cutting-edge digital solutions that help startups and enterprises thrive in a digital-first world. Our focus is on building scalable, high-performance software that drives growth, optimizes business operations, and ensures long-term success."
+                paragraph="At 3PL Dynamics, our mission is to revolutionize third-party logistics by leveraging cutting-edge technology to streamline operations, enhance efficiency, and drive business growth. We are committed to delivering scalable, high-performance solutions that empower businesses to optimize supply chain management with precision and reliability."
                 mb="44px"
               />
 
