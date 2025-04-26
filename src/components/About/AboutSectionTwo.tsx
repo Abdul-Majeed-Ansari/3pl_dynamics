@@ -31,9 +31,9 @@ const AboutSectionTwo = () => {
                 Our Company
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed mb-1">
-                At 3PL Dynamics, we are dedicated to transforming logistics operations through innovative technology and data-driven solutions. As a leading provider of third-party logistics (3PL) technology solutions, we specialize in streamlining supply chain processes, optimizing warehouse management, and enhancing operational efficiency.
+                At DigifySoft, we are dedicated to transforming businesses through innovative technology and data-driven solutions. As a leading provider of digital transformation services, we specialize in streamlining operations, optimizing workflows, and enhancing overall business efficiency.
                 </p>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed mb-1">Our team of experienced professionals brings deep expertise across logistics technology, warehouse automation, inventory management, data analytics, and API integrations. We work closely with businesses to understand their unique logistics challenges, ensuring that every solution we deliver is scalable, efficient, and tailored to their operational needs.</p>
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed mb-1">Our team of experts brings deep experience across web and app development, AI solutions, digital marketing, SEO, and custom software development. We work closely with startups and enterprises to understand their unique challenges, ensuring that every solution we deliver is scalable, efficient, and tailored to their specific needs.</p>
                 {/* <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">By blending creativity, technical know-how, and a client-centric approach, we provide personalized strategies that drive measurable results and long-term success. Whether you’re looking to build a robust digital presence, optimize your business processes, or enhance user experiences, SourceIgnite is your trusted partner every step of the way.</p> */}
               </div>
               {/* <div className="mb-9">
