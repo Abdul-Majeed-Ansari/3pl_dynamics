@@ -41,7 +41,7 @@ const AboutSectionOne = () => {
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Robust Frameworks" />
+                    <List text="Robust Framework's" />
                     <List text="Comprehensive Documentation" />
                     <List text="Developer-Centric Approach" />
                   </div>
