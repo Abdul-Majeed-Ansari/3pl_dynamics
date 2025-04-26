@@ -27,7 +27,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                3PL Dynamics provides efficient third-party logistics solutions, enhancing visibility and streamlining warehousing, order fulfillment, and distribution. Our real-time tracking optimizes stock levels for accurate processing, reduced waste, and improved efficiency.
+                At DigifySoft, we provide innovative digital solutions that enhance business operations and drive efficiency across various industries. From web development to AI-powered tools, we specialize in creating seamless digital experiences that optimize workflows, boost productivity, and accelerate business growth.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -174,7 +174,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-            Copyright @ 2025 3pl Dynamics.
+            Copyright @ 2025 DigifySoft.
             </p>
           </div>
         </div>
