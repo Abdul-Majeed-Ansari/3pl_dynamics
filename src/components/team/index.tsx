@@ -14,16 +14,16 @@ const Team = () => {
       }
     },
     {
-      name: 'Umer Aslam',
-      role: 'Co-Founder & Senior Software Engineer',
-      image: '/images/team/unknown.jpeg',
+      name: 'Ahsan Nadeem',
+      role: 'Co-Founder & CTO',
+      image: '/images/team/ahsan.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/umer-aslam-9399a4175/',
       }
     },
     {
       name: 'Ali Imam',
-      role: 'Co-Founder & Senior Mobile App Developer',
+      role: 'Senior Mobile App Developer',
       image: '/images/team/ali-imam.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/ali-imam-%EF%A3%BF-168040189/'
@@ -54,13 +54,13 @@ const Team = () => {
                     : ''
                 }`}
               >
-                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2 bg-white dark:bg-gray-800">
+                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2 bg-[#e6e8ea] dark:bg-gray-800">
                   <Image 
                     width={500}
                     height={400}
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-80 object-cover object-center"
+                    className="w-full h-80 object-contain object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
