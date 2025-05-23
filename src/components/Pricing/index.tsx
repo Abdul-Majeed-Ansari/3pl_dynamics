@@ -21,11 +21,13 @@ const Pricing = () => {
               subtitle="Short-term commitment, ideal for testing or pilot projects."
               buttonText="Start Free Trial"
             >
-              <OfferList text="Access to limited features" status="active" />
-              <OfferList text="Priority support" status="active" />
-              <OfferList text="Flexible plan" status="active" />
+              <OfferList text="Up to 4,000 orders/month Up to 30 3PL Users" status="active" />
+              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
+              <OfferList text="Order Management, Barcode/Label Management" status="active" />
               <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
-              <OfferList text="Includes a 3-day free trial" status="active" />
+              <OfferList text="Inventory Management, Warehouse Management" status="active" />
+              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
+              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
               <div className="mt-6 text-sm text-gray-600">
                 <p><strong>Duration:</strong> 3 months</p>
                 <p className="text-green-600 font-medium">Includes a 3-day free trial!</p>
@@ -39,12 +41,13 @@ const Pricing = () => {
               subtitle="Best for scaling teams and mid-term projects."
               buttonText="Choose Plan"
             >
-              <OfferList text="Access to all features" status="active" />
-              <OfferList text="Priority support" status="active" />
-              <OfferList text="Savings compared to 3-month plan" status="active" />
-              <OfferList text="Choose from 300+ connectors" status="active" />
-              <OfferList text="Unlimited transformations" status="active" />
-              <OfferList text="Custom requirements" status="active" />
+              <OfferList text="Up to 8,000 orders/month Up to 50 3PL Users" status="active" />
+              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
+              <OfferList text="Order Management, Barcode/Label Management" status="active" />
+              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
+              <OfferList text="Inventory Management, Warehouse Management" status="active" />
+              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
+              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
               <div className="mt-6 text-sm text-gray-600">
                 <p><strong>Duration:</strong> 6 months</p>
               </div>
@@ -57,13 +60,16 @@ const Pricing = () => {
               subtitle="Ideal for long-term commitment with maximum savings."
               buttonText="Choose Plan"
             >
-              <OfferList text="Access to all features" status="active" />
-              <OfferList text="Priority support" status="active" />
-              <OfferList text="Best value for money" status="active" />
-              <OfferList text="Low-code connector builder" status="active" />
-              <OfferList text="Choose from 500+ connectors" status="active" />
-              <OfferList text="Unlimited transformations" status="active" />
-              <OfferList text="Custom requirements" status="active" />
+              <OfferList text="Up to 12,000 orders/month Up to 70 3PL Users" status="active" />
+              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
+              <OfferList text="Order Management, Barcode/Label Management" status="active" />
+              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
+              <OfferList text="Inventory Management, Warehouse Management" status="active" />
+              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
+              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
+              <OfferList text="Work Order Management, Bill of Materials (BOM) Tracking" status="active" />
+              <OfferList text="Production Scheduling, Material Requirement Planning (MRP)" status="active" />
+              <OfferList text="Batch & Lot Tracking" status="active" />
               <div className="mt-6 text-sm text-gray-600">
                 <p><strong>Duration:</strong> 12 months</p>
               </div>
@@ -77,15 +83,21 @@ const Pricing = () => {
               buttonText="Talk To Sales"
               highlighted={true}
             >
-              <OfferList text="Access to all features" status="active" />
-              <OfferList text="Priority support" status="active" />
-              <OfferList text="Best value for money" status="active" />
-              <OfferList text="Low-code connector builder" status="active" />
-              <OfferList text="OAuth connector setup" status="active" />
-              <OfferList text="Secure access with SSO" status="active" />
-              <OfferList text="Choose from 1000+ connectors" status="active" />
-              <OfferList text="Unlimited transformations" status="active" />
-              <OfferList text="Custom requirements" status="active" />
+              <OfferList text="Unlimited orders/month Unlimited 3PL Users" status="active" />
+              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
+              <OfferList text="Order Management, Barcode/Label Management" status="active" />
+              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
+              <OfferList text="Inventory Management, Warehouse Management" status="active" />
+              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
+              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
+              <OfferList text="Work Order Management, Bill of Materials (BOM) Tracking" status="active" />
+              <OfferList text="Production Scheduling, Material Requirement Planning (MRP)" status="active" />
+              <OfferList text="Batch & Lot Tracking" status="active" />
+              <OfferList text="Advanced Resource & Capacity Planning" status="active" />
+              <OfferList text="Production Routing & Workflow Management" status="active" />
+              <OfferList text="Advanced Analytics & Forecasting" status="active" />
+              <OfferList text="Customizable API Integrations" status="active" />
+              <OfferList text="Role-Based Access Controls" status="active" />
               <div className="mt-6 text-sm text-gray-600">
                 <p><strong>Duration:</strong> 12 months</p>
               </div>
