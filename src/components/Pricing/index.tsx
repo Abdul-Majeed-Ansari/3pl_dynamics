@@ -1,102 +1,96 @@
 "use client";
-import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
-      <div className="container">
+    <section id="pricing" className="relative z-10 md:py-20 lg:py-28 bg-gray-50 dark:bg-dark">
+      <div className="container mx-auto px-4">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Find the Perfect Plan for Your Needs"
+          paragraph="Explore our plans below and choose the one that best fits your goals, budget, and usage. Each plan is thoughtfully designed to provide excellent value, robust features, and the dedicated support you deserve."
           center
           width="665px"
         />
 
-        <div className="w-full">
-          <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4 items-stretch">
+          <div className="h-full">
+            <PricingBox
+              packageName="3-Month Plan (Starter)"
+              subtitle="Short-term commitment, ideal for testing or pilot projects."
+              buttonText="Start Free Trial"
             >
-              Monthly
-            </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
-                >
-                  <span className="active h-4 w-4 rounded-full bg-white"></span>
-                </div>
+              <OfferList text="Access to limited features" status="active" />
+              <OfferList text="Priority support" status="active" />
+              <OfferList text="Flexible plan" status="active" />
+              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
+              <OfferList text="Includes a 3-day free trial" status="active" />
+              <div className="mt-6 text-sm text-gray-600">
+                <p><strong>Duration:</strong> 3 months</p>
+                <p className="text-green-600 font-medium">Includes a 3-day free trial!</p>
               </div>
-            </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Yearly
-            </span>
+            </PricingBox>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Basic Package Best Value for Money Guaranteed!"
-          >
-            <OfferList text="Social media account setup" status="active" />
-            <OfferList text="Social media strategy" status="active" />
-            <OfferList text="1 social media handle (Facebook/Instagram/Twitter/LinkedIn) " status="active" />
-            <OfferList text="8 still design posts per month" status="active" />
-            <OfferList text="Cancel any time" status="inactive" />
-            <OfferList text="Money Back Guarantee" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Basic Package Best Value for Money Guaranteed!"
-          >
-            <OfferList text="Social media account setup" status="active" />
-            <OfferList text="Social media strategy" status="active" />
-            <OfferList text="2 social media handles (Facebook & Instagram)" status="active" />
-            <OfferList text="15 still design posts per month" status="active" />
-            <OfferList text="4 Ad Campaigns" status="active" />
-            <OfferList text="Query management" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Basic Package Best Value for Money Guaranteed!"
-          >
-            <OfferList text="Social media account setup" status="active" />
-            <OfferList text="Social media strategy" status="active" />
-            <OfferList text="3 Social media handles (Facebook, Instagram & Twitter/LinkedIn) " status="active" />
-            <OfferList text="2 Animated videos per month" status="active" />
-            <OfferList text="Query management" status="active" />
-            <OfferList text="Community management" status="active" />
-          </PricingBox>
+          <div className="h-full">
+            <PricingBox
+              packageName="6-Month Plan (Business)"
+              subtitle="Best for scaling teams and mid-term projects."
+              buttonText="Choose Plan"
+            >
+              <OfferList text="Access to all features" status="active" />
+              <OfferList text="Priority support" status="active" />
+              <OfferList text="Savings compared to 3-month plan" status="active" />
+              <OfferList text="Choose from 300+ connectors" status="active" />
+              <OfferList text="Unlimited transformations" status="active" />
+              <OfferList text="Custom requirements" status="active" />
+              <div className="mt-6 text-sm text-gray-600">
+                <p><strong>Duration:</strong> 6 months</p>
+              </div>
+            </PricingBox>
+          </div>
+
+          <div className="h-full">
+            <PricingBox
+              packageName="12-Month Plan (Premium)"
+              subtitle="Ideal for long-term commitment with maximum savings."
+              buttonText="Choose Plan"
+            >
+              <OfferList text="Access to all features" status="active" />
+              <OfferList text="Priority support" status="active" />
+              <OfferList text="Best value for money" status="active" />
+              <OfferList text="Low-code connector builder" status="active" />
+              <OfferList text="Choose from 500+ connectors" status="active" />
+              <OfferList text="Unlimited transformations" status="active" />
+              <OfferList text="Custom requirements" status="active" />
+              <div className="mt-6 text-sm text-gray-600">
+                <p><strong>Duration:</strong> 12 months</p>
+              </div>
+            </PricingBox>
+          </div>
+
+          <div className="h-full">
+            <PricingBox
+              packageName="12-Month Plan (Enterprise)"
+              subtitle="Ideal for long-term commitment with maximum savings."
+              buttonText="Talk To Sales"
+              highlighted={true}
+            >
+              <OfferList text="Access to all features" status="active" />
+              <OfferList text="Priority support" status="active" />
+              <OfferList text="Best value for money" status="active" />
+              <OfferList text="Low-code connector builder" status="active" />
+              <OfferList text="OAuth connector setup" status="active" />
+              <OfferList text="Secure access with SSO" status="active" />
+              <OfferList text="Choose from 1000+ connectors" status="active" />
+              <OfferList text="Unlimited transformations" status="active" />
+              <OfferList text="Custom requirements" status="active" />
+              <div className="mt-6 text-sm text-gray-600">
+                <p><strong>Duration:</strong> 12 months</p>
+              </div>
+            </PricingBox>
+          </div>
         </div>
       </div>
 

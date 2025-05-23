@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 import DonationCard from "@/components/DonationCard";
+import Pricing from "@/components/Pricing";
 
 export const metadata: Metadata = {
   title: "3pl Dynamics",
@@ -31,6 +32,7 @@ export default function Home() {
       <Testimonials />
       {/* <Pricing /> */}
       {/* <Blog /> */}
+      <Pricing />
       <Contact />
       <DonationCard />
     </>

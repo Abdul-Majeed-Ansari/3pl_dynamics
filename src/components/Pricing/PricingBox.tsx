@@ -1,33 +1,44 @@
-const PricingBox = (props: {
-  price: string;
-  duration: string;
+type PricingBoxProps = {
   packageName: string;
   subtitle: string;
   children: React.ReactNode;
-}) => {
-  const { price, duration, packageName, subtitle, children } = props;
+  highlighted?: boolean;
+  buttonText?: string;
+};
+
+const PricingBox: React.FC<PricingBoxProps> = (props) => {
+  const { packageName, subtitle, children, highlighted = false, buttonText = "Start Free Trial" } = props;
 
   return (
-    <div className="w-full">
-      <div className="relative z-10 rounded-sm bg-white px-8 py-10 shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark">
-        <div className="flex items-center justify-between">
-          <h3 className="price mb-2 text-[32px] font-bold text-black dark:text-white">
-            $<span className="amount">{price}</span>
-            <span className="time text-lg font-medium text-body-color">
-              /{duration}
+    <div className="w-full h-full">
+      <div className={`relative z-10 rounded-sm px-8 py-10 shadow-three hover:shadow-one dark:shadow-two dark:hover:shadow-gray-dark h-full flex flex-col ${
+        highlighted ? "bg-gradient-to-b from-blue-50 to-white border-2 border-blue-200" : "bg-white dark:bg-gray-dark"
+      }`}>
+        {highlighted && (
+          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+            <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+              Best Value
             </span>
+          </div>
+        )}
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="price mb-2 text-[32px] font-bold text-black dark:text-white">
           </h3>
           <h4 className="mb-2 text-xl font-bold text-dark dark:text-white">
             {packageName}
           </h4>
         </div>
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
-        <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
-          <button className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            Start Free Trial
+        <div className="flex-grow mb-8">{children}</div>
+        <div className="mt-auto">
+          <button className={`flex w-full items-center justify-center rounded-sm p-3 text-base font-semibold transition duration-300 ease-in-out ${
+            highlighted 
+              ? "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-signUp" 
+              : "bg-primary text-white hover:bg-opacity-80 hover:shadow-signUp"
+          }`}>
+            {buttonText}
           </button>
         </div>
-        <div>{children}</div>
         <div className="absolute bottom-0 right-0 z-[-1]">
           <svg
             width="179"
