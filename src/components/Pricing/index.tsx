@@ -2,10 +2,21 @@
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import { useState } from "react";
 
 const Pricing = () => {
+  const [expandedCard, setExpandedCard] = useState(null);
+
+  const toggleCard = (cardName) => {
+  setExpandedCard((prev) => (prev === cardName ? null : cardName));
+};
+
+console.log('expandedCard', expandedCard)
   return (
-    <section id="pricing" className="relative z-10 md:py-20 lg:py-28 bg-gray-50 dark:bg-dark">
+    <section
+      id="pricing"
+      className="relative z-10 bg-gray-50 dark:bg-dark md:py-20 lg:py-28"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Find the Perfect Plan for Your Needs"
@@ -14,92 +25,231 @@ const Pricing = () => {
           width="665px"
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4 items-stretch">
-          <div className="h-full">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4 items-start">
+          <div className="flex flex-col h-[950px]">
             <PricingBox
               packageName="3-Month Plan (Starter)"
               subtitle="Short-term commitment, ideal for testing or pilot projects."
               buttonText="Start Free Trial"
             >
-              <OfferList text="Up to 4,000 orders/month Up to 30 3PL Users" status="active" />
-              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
-              <OfferList text="Order Management, Barcode/Label Management" status="active" />
-              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
-              <OfferList text="Inventory Management, Warehouse Management" status="active" />
-              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
-              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
+              <OfferList
+                text="Up to 4,000 orders/month Up to 30 3PL Users"
+                status="active"
+              />
+              <OfferList
+                text="3PL User Portal, Billing & Invoicing"
+                status="active"
+              />
+              <OfferList
+                text="Order Management, Barcode/Label Management"
+                status="active"
+              />
+              <OfferList
+                text="Free dedicated ec2 instance 12gb ram"
+                status="active"
+              />
+              <OfferList
+                text="Inventory Management, Warehouse Management"
+                status="active"
+              />
+              <OfferList
+                text="Shipping Management, Order Fulfillment"
+                status="active"
+              />
+              <OfferList
+                text="Returns Management, Reporting and Mobile App"
+                status="active"
+              />
               <div className="mt-6 text-sm text-gray-600">
-                <p><strong>Duration:</strong> 3 months</p>
-                <p className="text-green-600 font-medium">Includes a 3-day free trial!</p>
+                <p>
+                  <strong>Duration:</strong> 3 months
+                </p>
+                <p className="font-medium text-green-600">
+                  Includes a 3-day free trial!
+                </p>
               </div>
             </PricingBox>
           </div>
 
-          <div className="h-full">
+          <div className="flex flex-col h-[950px]">
             <PricingBox
               packageName="6-Month Plan (Business)"
               subtitle="Best for scaling teams and mid-term projects."
               buttonText="Choose Plan"
             >
-              <OfferList text="Up to 8,000 orders/month Up to 50 3PL Users" status="active" />
-              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
-              <OfferList text="Order Management, Barcode/Label Management" status="active" />
-              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
-              <OfferList text="Inventory Management, Warehouse Management" status="active" />
-              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
-              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
+              <OfferList
+                text="Up to 8,000 orders/month Up to 50 3PL Users"
+                status="active"
+              />
+              <OfferList
+                text="3PL User Portal, Billing & Invoicing"
+                status="active"
+              />
+              <OfferList
+                text="Order Management, Barcode/Label Management"
+                status="active"
+              />
+              <OfferList
+                text="Free dedicated ec2 instance 12gb ram"
+                status="active"
+              />
+              <OfferList
+                text="Inventory Management, Warehouse Management"
+                status="active"
+              />
+              <OfferList
+                text="Shipping Management, Order Fulfillment"
+                status="active"
+              />
+              <OfferList
+                text="Returns Management, Reporting and Mobile App"
+                status="active"
+              />
               <div className="mt-6 text-sm text-gray-600">
-                <p><strong>Duration:</strong> 6 months</p>
+                <p>
+                  <strong>Duration:</strong> 6 months
+                </p>
               </div>
             </PricingBox>
           </div>
 
-          <div className="h-full">
+          <div className={`flex flex-col ${expandedCard === 'premium' ? 'h-[1220px]' : 'h-[950px]'}`}>
             <PricingBox
-              packageName="12-Month Plan (Premium)"
+              packageName="12-Month Plan (premium)"
               subtitle="Ideal for long-term commitment with maximum savings."
               buttonText="Choose Plan"
             >
-              <OfferList text="Up to 12,000 orders/month Up to 70 3PL Users" status="active" />
-              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
-              <OfferList text="Order Management, Barcode/Label Management" status="active" />
-              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
-              <OfferList text="Inventory Management, Warehouse Management" status="active" />
-              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
-              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
-              <OfferList text="Work Order Management, Bill of Materials (BOM) Tracking" status="active" />
-              <OfferList text="Production Scheduling, Material Requirement Planning (MRP)" status="active" />
-              <OfferList text="Batch & Lot Tracking" status="active" />
-              <div className="mt-6 text-sm text-gray-600">
-                <p><strong>Duration:</strong> 12 months</p>
+              <OfferList
+                text="Up to 12,000 orders/month Up to 70 3PL Users"
+                status="active"
+              />
+              <OfferList
+                text="3PL User Portal, Billing & Invoicing"
+                status="active"
+              />
+              <OfferList
+                text="Order Management, Barcode/Label Management"
+                status="active"
+              />
+              <OfferList
+                text="Free dedicated ec2 instance 12gb ram"
+                status="active"
+              />
+              <OfferList
+                text="Inventory Management, Warehouse Management"
+                status="active"
+              />
+              <OfferList
+                text="Shipping Management, Order Fulfillment"
+                status="active"
+              />
+          
+              <div>
+                <OfferList
+                  text="Returns Management, Reporting and Mobile App"
+                  status="active"
+                />
+                {expandedCard === "premium" && (
+                <>
+                  <OfferList
+                    text="Work Order Management, Bill of Materials (BOM) Tracking"
+                    status="active"
+                  />
+                  <OfferList
+                    text="Production Scheduling, Material Requirement Planning (MRP)"
+                    status="active"
+                  />
+                  <OfferList text="Batch & Lot Tracking" status="active" />
+                  <div className="mt-6 text-sm text-gray-600">
+                    <p>
+                      <strong>Duration:</strong> 12 months
+                    </p>
+                  </div>
+                </>
+              )}
+                <button
+                  onClick={() => toggleCard("premium")}
+                  className="mt-2 text-sm text-blue-600 hover:underline"
+                >
+                  {expandedCard === "premium" ? "See Less" : "See More"}
+                </button>
               </div>
             </PricingBox>
           </div>
 
-          <div className="h-full">
+          <div className={`flex flex-col ${expandedCard === 'enterprise' ? 'h-[1540px]' : 'h-[950px]'}`}>
             <PricingBox
-              packageName="12-Month Plan (Enterprise)"
+              packageName="12-Month Plan (enterprise)"
               subtitle="Ideal for long-term commitment with maximum savings."
               buttonText="Talk To Sales"
               highlighted={true}
             >
-              <OfferList text="Unlimited orders/month Unlimited 3PL Users" status="active" />
-              <OfferList text="3PL User Portal, Billing & Invoicing" status="active" />
-              <OfferList text="Order Management, Barcode/Label Management" status="active" />
-              <OfferList text="Free dedicated ec2 instance 12gb ram" status="active" />
-              <OfferList text="Inventory Management, Warehouse Management" status="active" />
-              <OfferList text="Shipping Management, Order Fulfillment" status="active" />
-              <OfferList text="Returns Management, Reporting and Mobile App" status="active" />
-              <OfferList text="Work Order Management, Bill of Materials (BOM) Tracking" status="active" />
-              <OfferList text="Production Scheduling, Material Requirement Planning (MRP)" status="active" />
+              <OfferList
+                text="Unlimited orders/month Unlimited 3PL Users"
+                status="active"
+              />
+              <OfferList
+                text="3PL User Portal, Billing & Invoicing"
+                status="active"
+              />
+              <OfferList
+                text="Order Management, Barcode/Label Management"
+                status="active"
+              />
+              <OfferList
+                text="Free dedicated ec2 instance 12gb ram"
+                status="active"
+              />
+              <OfferList
+                text="Inventory Management, Warehouse Management"
+                status="active"
+              />
+              <OfferList
+                text="Shipping Management, Order Fulfillment"
+                status="active"
+              />
+              <div>
+                <OfferList
+                  text="Returns Management, Reporting and Mobile App"
+                  status="active"
+                />
+                {expandedCard === "enterprise" && (
+                  <>
+                    <OfferList
+                text="Work Order Management, Bill of Materials (BOM) Tracking"
+                status="active"
+              />
+              <OfferList
+                text="Production Scheduling, Material Requirement Planning (MRP)"
+                status="active"
+              />
               <OfferList text="Batch & Lot Tracking" status="active" />
-              <OfferList text="Advanced Resource & Capacity Planning" status="active" />
-              <OfferList text="Production Routing & Workflow Management" status="active" />
-              <OfferList text="Advanced Analytics & Forecasting" status="active" />
+              <OfferList
+                text="Advanced Resource & Capacity Planning"
+                status="active"
+              />
+              <OfferList
+                text="Production Routing & Workflow Management"
+                status="active"
+              />
+              <OfferList
+                text="Advanced Analytics & Forecasting"
+                status="active"
+              />
               <OfferList text="Customizable API Integrations" status="active" />
               <OfferList text="Role-Based Access Controls" status="active" />
               <div className="mt-6 text-sm text-gray-600">
-                <p><strong>Duration:</strong> 12 months</p>
+                <p>
+                  <strong>Duration:</strong> 12 months
+                </p>
+              </div>
+                  </>
+                )}
+                <button
+                  onClick={() => toggleCard("enterprise")}
+                className="mt-2 text-sm text-blue-600 hover:underline">
+                  {expandedCard === "enterprise" ? "See Less" : "See More"}
+                </button>
               </div>
             </PricingBox>
           </div>

@@ -32,8 +32,7 @@ const Address = () => {
             Address
           </h2>
           <p className="text-base dark:text-white lg:text-lg">
-            R-552 Gulberg Town, Block 16 Federal B Area, Near Karachi Institute
-            of Heart Diseases, Karachi
+            Office No: 401, 4th f loor, Batool Arcade, opp Bait ul-Mukarram Masjid, Gulshan-e Iqbal, Karachi, Pakistan., Karachi, Sindh 75300, PK
           </p>
         </div>
       </div>
